@@ -3,7 +3,7 @@ sudo: false
 node_js:
   - '0.10'
   - '0.12'
-  - iojs
+  - 'stable'
 
 cache:
   directories:
@@ -13,7 +13,7 @@ cache:
 matrix:
   fast_finish: true
   allow_failures:
-    - node_js: iojs
+    - node_js: 'stable'
 
 install:
   # Check the size of caches
